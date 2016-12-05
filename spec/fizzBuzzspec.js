@@ -28,4 +28,8 @@ describe("Fizzbuzz", function() {
   it("should test for indivisibility by both 3 and 5", function(){
     expect(fizzbuzz.isDivisibleByThreeAndFive(16)).toBeFalsy();
   });
+
+  it("should return fizz if number is divisible by 3", function(){
+    expect(fizzbuzz.output(3)).toBe('fizz');
+  });
 });
