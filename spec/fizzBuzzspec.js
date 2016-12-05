@@ -17,4 +17,7 @@ describe("Fizzbuzz", function() {
     expect(fizzbuzz.isDivisibleByFive(5)).toBeTruthy();
   });
 
+  it("should test for indivisibilty by 5", function() {
+    expect(fizzbuzz.isDivisibleByFive(9)).toBeFalsy();
+  });
 });
