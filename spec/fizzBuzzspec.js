@@ -21,7 +21,11 @@ describe("Fizzbuzz", function() {
     expect(fizzbuzz.isDivisibleByFive(9)).toBeFalsy();
   });
 
-  it("should test for divisibility by 3 and 5", function() {
+  it("should test for divisibility by both 3 and 5", function() {
     expect(fizzbuzz.isDivisibleByThreeAndFive(15)).toBeTruthy();
+  });
+
+  it("should test for indivisibility by both 3 and 5", function(){
+    expect(fizzbuzz.isDivisibleByThreeAndFive(16)).toBeFalsy();
   });
 });
