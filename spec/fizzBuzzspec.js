@@ -20,4 +20,8 @@ describe("Fizzbuzz", function() {
   it("should test for indivisibilty by 5", function() {
     expect(fizzbuzz.isDivisibleByFive(9)).toBeFalsy();
   });
+
+  it("should test for divisibility by 3 and 5", function() {
+    expect(fizzbuzz.isDivisibleByThreeAndFive(15)).toBeTruthy();
+  });
 });
