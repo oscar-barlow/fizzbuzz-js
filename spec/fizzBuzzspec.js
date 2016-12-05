@@ -36,4 +36,8 @@ describe("Fizzbuzz", function() {
   it("should return buzz if number is divisible by 5", function() {
     expect(fizzbuzz.output(5)).toBe('buzz');
   });
+
+  it("should return fizzbuzz if the number is divisible by both 3 and 5", function() {
+    expect(fizzbuzz.output(15)).toBe('fizzbuzz');
+  });
 });
